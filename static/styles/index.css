@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 450px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: linear-gradient(to top right, gray 0%, black 100%);
+	color: #333;
+	font-family:  'Arial', sans-serif;
+}
+
+
+.center {
+	position: absolute;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 260px;
+	border-radius: 3px;
+	box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+.title {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #999;
+	text-align: center;
+	color: black;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: 300;
+	color: #666;
+}
+
+.dropzone {
+	width: 100px;
+	height: 80px;
+	border: 1px dashed #999;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.upload-icon {
+	margin: 25px 2px 2px 2px;
+}
+
+.upload-input {
+	position: relative;
+	top: -62px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+
+#dialsoundContainer {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+}
+.button {
+	background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 35px;
+    margin-top: 0px;
+    margin-left: -18px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family:  'Arial', sans-serif;
+  	transition: all 0.2s ease-out;
+  
+}
+.button:hover {
+  background: #06D85F;
+}
+.button2 {
+	background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 41px;
+    margin-left: -18px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-family:  'Arial', sans-serif;
+    cursor: pointer;
+  	transition: all 0.3s ease-out;
+    text-decoration: none;
+  	
+}
+.button2:hover {
+  background: #06D85F;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
